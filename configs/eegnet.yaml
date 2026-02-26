@@ -1,0 +1,27 @@
+# Configuración para EEGNet
+model:
+  name: "EEGNet"
+  n_classes: 4
+  n_chans: 22
+  n_times: 1000
+  sfreq: 250
+  
+training:
+  learning_rate: 0.001
+  batch_size: 64
+  n_epochs: 100
+  weight_decay: 0.0001
+  
+data:
+  dataset: "BNCI2014001"
+  n_subjects: 9
+  session: ["session_T", "session_E"]
+  
+filters:
+  F1: 8
+  F2: 16
+  D: 2
+  kernel_length: 64
+  pool_time_length: 4
+  pool_time_stride: 4
+

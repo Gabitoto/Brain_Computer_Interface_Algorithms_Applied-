@@ -205,3 +205,29 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# BCI Benchmark - Datos grandes
+# Datasets descargados por MOABB (pueden ser muy grandes)
+data/*.h5
+data/*.mat
+data/*.fif
+data/*.edf
+data/*.bdf
+data/*.set
+data/*.npy
+data/*.npz
+
+# Resultados y modelos entrenados (opcional - descomenta si no quieres subirlos)
+# results/*.csv
+# results/*.pth
+# results/*.log
+# models/*.pth
+# models/*.pt
+
+# Archivos temporales de MOABB
+*.h5
+*.mat
+*.fif
+*.edf
+*.bdf
+*.set
