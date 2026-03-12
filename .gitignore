@@ -216,6 +216,7 @@ data/*.bdf
 data/*.set
 data/*.npy
 data/*.npz
+data/*.gdf
 
 # Resultados y modelos entrenados (opcional - descomenta si no quieres subirlos)
 # results/*.csv
