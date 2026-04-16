@@ -16,7 +16,7 @@ N_CHANNELS_DEFAULT = 22
 # 769=mano izquierda, 770=mano derecha, 771=pies, 772=lengua
 STIM_CODES = [769, 770, 771, 772]
 
-# Nombres "amigables" de los 22 canales EEG
+# Nombres de los 22 canales EEG
 CHANNEL_NAMES = [
     'Fz',  'FC3', 'FC1', 'FCz', 'FC2', 'FC4',
     'C5',  'C3',  'C1',  'Cz',  'C2',  'C4',
@@ -51,7 +51,7 @@ def read_BCI_IV_DS2a(
 
     # Convertir clases seleccionadas a sus códigos de estímulo reales
     # Ej: class_labels=[1,2] → stim_codes=[769, 770]
-    stim_codes = [STIM_CODES[i - 1] for i in class_labels]
+    stim_codes = [STIM_CODES[i - 1] for i in class_labels] ### ver que hace esta parte
     logging.debug(f"Códigos de estímulo usados: {stim_codes}")
 
     # ── Paso 1: Encontrar todos los archivos del dataset ──────────────────────
